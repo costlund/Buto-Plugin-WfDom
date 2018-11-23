@@ -1,6 +1,6 @@
 <?php
 /**
-  <p>Javascript to ad elements to dom.</p>
+  <p>Javascript to add elements to dom.</p>
   #code-javascript#
   PluginWfDom.render([{type: 'div', innerHTML: 'Append div in an element.'}], document.getElementById('start_link_container'));
   PluginWfDom.render([{type: 'div', innerHTML: 'Append div in body.'}]);
@@ -9,7 +9,7 @@
  */
 class PluginWfDom{
   /**
-  <p>Including js in html/head section.</p>
+  <p>Including thjs in html/head section.</p>
   */
   public static function widget_include(){
     $element = wfDocument::createHtmlElement('script', null, array('src' => '/plugin/wf/dom/dom.js'));
