@@ -1,7 +1,18 @@
 # Buto-Plugin-WfDom
 
-Javascript to add elements to dom.
 
+## Widget
+Include in head section.
+```
+type: widget
+data:
+  plugin: wf/dom
+  method: include
+```
+
+
+## Javascript
+Javascript to add elements to dom.
 ```
 PluginWfDom.render([{type: 'div', innerHTML: 'Append div in an element.'}], document.getElementById('start_link_container'));
 PluginWfDom.render([{type: 'div', innerHTML: 'Append div in body.'}]);
