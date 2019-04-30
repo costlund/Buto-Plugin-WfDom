@@ -1,8 +1,12 @@
 version: '1.0'
 history:
   '1.0':
-    description: 'First version.'
-plugin: {  }
+    date: '2019-04-30'
+    description: 'Manifest created.'
+plugin:
+  -
+    name: include/js
+    version: '1.0'
 sys:
   -
     name: mercury
@@ -12,5 +16,12 @@ php:
   - '7.2'
 author: null
 links:
-  - 'https://github.com'
+  Github: 'https://github.com'
 description: ''
+third_part_software:
+  -
+    name: null
+    description: null
+    path:
+      - /path/to/files
+

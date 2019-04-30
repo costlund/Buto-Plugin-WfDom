@@ -12,7 +12,8 @@ class PluginWfDom{
   <p>Including thjs in html/head section.</p>
   */
   public static function widget_include(){
-    $element = wfDocument::createHtmlElement('script', null, array('src' => '/plugin/wf/dom/dom.js'));
+    wfPlugin::enable('include/js');
+    $element = wfDocument::createWidget('include/js', 'include', array('src' => '/plugin/wf/dom/dom.js'));    
     wfDocument::renderElement(array($element));
   }
 }
