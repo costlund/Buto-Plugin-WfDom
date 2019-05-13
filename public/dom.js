@@ -33,6 +33,9 @@ function plugin_wf_dom(){
     if(!parent){
       parent = document.body;
     }
+    if(typeof parent == 'string'){
+      parent = document.getElementById(parent);
+    }
     for(var i=0;i<element.length;i++){
       var obj = document.createElement(element[i].type);
       if(element[i].attribute){
