@@ -6,7 +6,7 @@ history:
 plugin:
   -
     name: include/js
-    version: '1.0'
+    version: 1.1.0
 sys:
   -
     name: mercury
@@ -15,6 +15,6 @@ sys:
 php:
   - '7.2'
 author: null
-links:
+links: null
 description: ''
-third_part_software:
+third_part_software: null
