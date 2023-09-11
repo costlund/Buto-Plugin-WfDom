@@ -14,11 +14,15 @@ function plugin_wf_dom(){
         }    
       }
       parent.appendChild(obj);
-      if(element[i].innerHTML){
+      if(element[i].innerHTML || element[i].innerHTML===0){
         if((typeof element[i].innerHTML) === 'string'){
           obj.innerHTML = element[i].innerHTML;
+        }else if((typeof element[i].innerHTML) === 'number') {
+          obj.innerHTML = String(element[i].innerHTML);
         }else if((typeof element[i].innerHTML) === 'object') {
           this.render(element[i].innerHTML, obj);
+        }else{
+          console.log('PluginWfDom says: Unhandled type', typeof element[i].innerHTML, element[i].innerHTML);
         }
       }
     }
